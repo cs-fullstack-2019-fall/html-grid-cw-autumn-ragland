@@ -1,0 +1,43 @@
+/*grid display and font change for entire page*/
+body{
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+/*add gray background, padding and margin to all element tags used (except nav)*/
+header, article, aside, footer{
+    background: lightgray;
+    padding: 1%;
+    margin: 1%;
+}
+/*header in grid*/
+header{
+    grid-column: 1/4;
+}
+/*navigation bar in grid and background color*/
+nav{
+    grid-column: 1/4;
+    background: lightblue;
+    padding: 1%;
+    margin: 1%;
+}
+/*change default link text color, increase font size and add padding*/
+a{
+    color: white;
+    font-size: 24px;
+    padding-right: 5%;
+}
+/*article in grid*/
+article{
+    grid-column: 1/3;
+}
+/*aside in grid*/
+aside{
+    grid-column: 3/4;
+}
+/*footer in grid*/
+footer{
+    grid-column: 1/4;
+}
+
